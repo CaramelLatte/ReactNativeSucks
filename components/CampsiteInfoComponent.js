@@ -103,7 +103,7 @@ class CampsiteInfo extends Component {
     this.setState({ showModal: !this.state.showModal });
   }
   handleComment(campsiteId) {
-    postComment(
+    this.props.postComment(
       campsiteId,
       this.state.rating,
       this.state.author,
